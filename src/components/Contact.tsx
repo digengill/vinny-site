@@ -25,9 +25,6 @@ function Contact({popup, popupHandler}: Props) {
   const [sendSuccess, setSendSuccess] = React.useState(false);
   const [sendFail, setSendFail] = React.useState(false);
   const mail_url: string = (process.env.REACT_APP_MAIL_URL) ? process.env.REACT_APP_MAIL_URL: 'url_missing';
-  function handleClick() {
-    setLoading(true);
-  }
 
   const handleClose = () => {
     popupHandler(false);
